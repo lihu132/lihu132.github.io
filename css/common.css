@@ -1,0 +1,583 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?72gcpp');
+    src:  url('../fonts/icomoon.eot?72gcpp#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?72gcpp') format('truetype'),
+      url('../fonts/icomoon.woff?72gcpp') format('woff'),
+      url('../fonts/icomoon.svg?72gcpp#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+
+/* center of page*/
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.container{    
+    width: 60%;
+    margin: 0 auto;}
+
+
+/* top Banner*/
+
+/* top logo*/
+.topBanner{
+    position: fixed;
+    width: 100%;
+    height: 200px;
+    background-color: transparent;
+    z-index: 1005;
+}
+
+.topBanner .logo{
+    float: left;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+.topBanner .logo a{
+    display: block;
+    width: 200px;
+    height: 144px;
+    background: url(../images/19385-COMMAT-Logo-RGB_500px_FA.png) no-repeat;
+    background-size: cover;
+    /* font-size: 0; 京东的作法 */
+    /* 淘宝的作法，让文字隐藏 */
+    text-indent: -9999px;
+    overflow: hidden;
+}
+
+/* top navigator*/
+.topNav{
+    position: absolute;
+    top: 25px;
+    right:40px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 1005;
+}
+
+.topNav::before{
+    content: '\ee1d';
+    font-family: 'icomoon';
+    font-size: 30px;
+    line-height: 40px;
+}
+
+/* .topNav nav{
+    opacity: 0;
+    width: 0;
+    height: 0;
+} */
+
+.active{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    z-index: 1001;
+    background-color: #f5f5f5;
+    transition: all .3s;
+    display: none;
+    box-shadow: -45px 0 45px -40px rgba(0,0,0,.1);
+    animation: fadeIn .8s ease;
+}
+
+@keyframes fadeIn {
+        from{opacity: 0; width: 0;}
+        to{opacity: 1; width: 50%;}
+}
+
+.active ul{
+    display: block;
+    margin-top: 40%;
+}
+
+.active ul li{
+    list-style: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+    font-family: "Work Sans", BlinkMacSystemFont, "-apple-system", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;;
+    color: #171717;
+    margin: 30px 0;
+}
+
+.active .parent::after{
+    content: '\ede4';
+    font-family: 'icomoon';
+    font-size: 24px;
+    margin-left: 8px;
+}
+
+.active .subContainer{
+    opacity: 0;
+    height: 0;
+    padding-top: 0px; 
+    margin-top: 0px; 
+    padding-bottom: 0px; 
+    margin-bottom: 0px; 
+    overflow: hidden;
+    background-color: #fff;
+    margin-top: 0;
+    transition: .6s;
+}
+
+.active .subContainer a{
+    display: block;
+    font-size: 18px;
+    height: 20px;
+    margin-top: 10px;
+}
+
+.active li:nth-child(3):hover .subContainer{
+    opacity: 1;
+    height: 160px; 
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+/*top video*/
+
+.siteTop{
+    width: 100%;
+}
+
+/* .siteTop video{
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+} */
+
+
+/*content*/
+.siteContent{
+    height: auto;
+    padding: 150px 0 200px 0;
+    color: #171717;
+    font-size: 18px;
+    /* margin-top: 1000px; */
+}
+
+.siteContent table{
+    margin-top: 80px;
+    text-align: center;
+}
+
+.siteContent h4{
+    position: relative;
+    font-weight: 400;
+    padding-left: 55px;
+}
+
+.siteContent h4::before{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url(../images/quality.svg);
+    background-repeat: no-repeat !important;
+    left: 30px;
+    top: 0;
+}
+
+.siteContent>table>tbody>tr>td:nth-child(2) h4::before{
+    background: url(../images/stock.svg);
+}
+
+.siteContent>table>tbody>tr>td:nth-child(3) h4::before{
+    background: url(../images/price.svg);
+}
+
+.siteContent>table>tbody>tr>td:nth-child(3) h4::before{
+    background: url(../images/custom.svg);
+}
+
+/*our passion*/
+.ourPassion{
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+}
+
+.passionLeft{
+    float: left;
+    width: 50%;
+    height: 700px;
+    padding: 130px 60px;
+    background-color: #f7f7f7;
+}
+
+.passionLeft i{
+    font-style: italic;
+    font-size: 18px;
+    color: #171717;
+}
+
+.passionLeft h5{
+    margin: 15px 0;
+}
+
+.passionLeft p{
+    line-height: 24px;
+    font-size: 16px;
+}
+
+.passionRight{
+    float: left;
+    width: 50%;
+    height: 700px;
+    background: url(../images/M_right_img-1.jpg) no-repeat center;
+}
+
+/*our vision*/
+.ourVision{
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+}
+
+.visionLeft{
+    float: left;
+    width: 50%;
+    height: 700px;
+    background: url(../images/M_left_img-1.jpg) no-repeat center;
+}
+
+.visionRight{
+    float: left;
+    width: 50%;
+    height: 700px;
+    padding: 130px 60px;
+    background-color: #f7f7f7;
+}
+
+.visionRight i{
+    font-style: italic;
+    font-size: 18px;
+    color: #171717;
+}
+
+.visionRight h5{
+    margin: 15px 0;
+}
+
+.visionRight p{
+    line-height: 24px;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+/* windows */
+.windows{
+    width: 100%;
+    /* height: 1320px; */
+}
+
+.relativePosition{
+    position: relative;
+}
+
+.viewWindows{
+    width: 100%;
+    height: 600px;
+    background: url(../images/M_full_img-dark1.jpg) no-repeat center;
+    background-attachment: fixed;
+    opacity: .5;
+
+}
+
+.cover{
+    width: 100%;
+    height: 600px;
+    background-color: black;
+    backdrop-filter: opacity(30%);
+
+}
+
+.cover .text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 250px 50px;
+}
+
+.cover .text p{
+    color: #fff;
+}
+
+
+
+/* content images */
+.contentImg{
+    width: 100%;
+    margin-bottom: 100px;
+    margin-top: 20px;
+}
+
+.contentImg a{
+    display: block;
+    float: left;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    text-align: left;
+    color: #171717;
+    width: 48%;
+    
+}
+
+.contentImg a:hover img {
+    transform: scale(1.2);
+}
+
+.contentImg a:hover p{
+    color: #BEBEBE;
+}
+
+.contentImg a:first-child{
+    margin-right: 4%;
+}
+
+.contentImg a h5{
+    font-family: "Spartan", BlinkMacSystemFont, "-apple-system", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;;
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.contentImg a p{
+    margin-top: 10px;
+    transition: color 0.5s;
+}
+
+.contentImg .imgFrame{
+    overflow: hidden;
+}
+
+.contentImg img{
+    width: 100%;
+    height: 400px;
+    transition: all 1s;
+}
+
+
+
+
+
+
+
+
+/* footer area */
+footer{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    color: #171717;
+    font-size: 14px;
+    border-top: 1px solid #171717;
+}
+
+
+/*footer top area*/
+
+.footerTop{
+    padding: 20px 0;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.footerTop .left{
+    float: left;
+    width: 269.75px;
+    height: 220px;
+    margin-right: 15px;
+}
+
+.footerTop .left span{
+    font-family: "Spartan", BlinkMacSystemFont, "-apple-system", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.phone{
+    margin-bottom: 10px;
+}
+
+.phone::before{
+    content: "\ece8";
+    font-family: 'icomoon';
+}
+
+.email{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.email::before{
+    content: "\eceb";
+    font-family: 'icomoon';
+}
+
+.address{
+    margin-bottom: 43px;
+}
+.address::before{
+    content: '\eced';
+    font-family: 'icomoon';
+}
+
+.facebook::before{
+    content:'\ee36';
+    font-family: 'icomoon';
+}
+
+.instagram::before{
+    content:'\ee38';
+    font-family: 'icomoon';
+}
+
+.twitter::before{
+    content:'\ee3c';
+    font-family: 'icomoon';
+}
+
+.pinterest::before{
+    content:'\ee77';
+    font-family: 'icomoon';
+}
+
+footer .buttonSocial{
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid #000;
+    color: #000;
+    background: transparent;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+
+/* Bottom Map*/
+.footerTop .middle{
+    float: left;
+    width: 400px;
+    height: 220px;
+    /* background-color: pink; */
+    margin-right: 45px;
+}
+
+
+/*Bottom Email*/
+
+.footerTop .right{
+    float: right;
+    width: 750px;
+    height: 220px;
+}
+
+.footerTop .rightTop{
+    width: 100%;
+    height: 20%;
+    padding-left: 10px;
+}
+
+.footerTop .rightTop h2{
+    font-family: "Spartan", BlinkMacSystemFont, "-apple-system", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+
+}
+
+
+.footerTop .right .col1{
+    float: left;
+    width: 50%;
+    height: 176px;
+}
+
+
+.footerTop .right .col2{
+    float: left;
+    width: 50%;
+    height: 176px;
+}
+
+
+
+
+
+
+
+
+/* footer bottom area*/
+.footerBottom{
+    height: 100px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.footerBottom .bottomNav{
+    float: left;
+}
+
+.footerBottom .bottomNav li{
+    float: left;
+    padding: 0 10px;
+    color: #000;
+}
+
+.footerBottom .bottomNav li:first-child{
+    padding-left: 0;
+}
+
+.footerBottom .copyRight{
+    float: right;
+}
+
+/* bottom button*/
+footer .button{
+    position: fixed;
+    bottom: 30px;
+    left: 28px;
+    z-index: 900;
+    outline: none;
+    color: #BEBEBE;
+    background: transparent;
+    border: 1px solid #BEBEBE;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+
+footer .button::before{
+    content: '\edf5';
+    font-family: 'icomoon';
+    font-size: 20px;
+    line-height: 40px;
+}
