@@ -172,6 +172,13 @@
     height: 360px;
 }
 
+#banner li div{
+    color: #171717;
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
 
 .arrow{
     position: absolute;

@@ -7,11 +7,12 @@ window.onload = function () {
     var prev = document.getElementById('prev')
     var next = document.getElementById('next')
 
-    var index = 1
+    var index = 3
     var timer = 0
     var flag = 1
-    var windowWidth = img.offsetWidth * 3 + 20
+    // var windowWidth = img.offsetWidth * 3 + 20
     var bannerWidth = img.offsetWidth * lis.length + 10 * lis.length
+    var initialPosition = -img.offsetWidth * 3 - 30
 
     // container.style.width = windowWidth + 'px'
     container.style.height = img.offsetHeight + 'px'
@@ -19,31 +20,41 @@ window.onload = function () {
 
     banner.style.width = bannerWidth + 'px'
     banner.style.height = img.offsetHeight + 'px'
-    banner.style.left = 0
+    banner.style.left = initialPosition + 'px'
 
     play()
 
     function animate(offset) {
-        banner.style.transition = '.5s'
         banner.style.left = -parseInt(offset) * index + 'px'
     }
 
     next.onclick = function () {
-        if (index == 6) {
-            index = 0
+        if (index == 13) {
+            banner.style.transition = 'none'
+            animate(img.offsetWidth + 10)
+            index = 3
         }
-        index++
+        else {
+            banner.style.transition = '.5s'
+        }
         console.log('索引' + index);
         animate(img.offsetWidth + 10)
+        index++
     }
 
     prev.onclick = function () {
-        if (index == 1) {
-            index = 6
+        if (index == 0) {
+            banner.style.transition = 'none'
+            animate(img.offsetWidth + 10)
+            index = 10
+        }
+        else {
+            banner.style.transition = '.5s'
         }
         index--
         console.log('索引' + index);
         animate(img.offsetWidth + 10)
+
     }
 
     function play() {
