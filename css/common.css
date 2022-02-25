@@ -235,7 +235,14 @@ footer .buttonSocial{
     height: 40px;
     text-align: center;
     line-height: 40px;
+    transition: .5s;
 }
+
+footer .buttonSocial:hover{
+    color: #fff;
+    background-color: #000;
+}
+
 
 /* Bottom Map*/
 .footerTop .middle{

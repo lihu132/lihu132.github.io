@@ -1,0 +1,123 @@
+.contactUs{
+    width: 100%;
+    padding-top: 200px;
+}
+
+.contactUs h1{
+    text-align: center;
+    font-size: 3em;
+    font-weight: 700;
+    font-family: "Spartan", BlinkMacSystemFont, "-apple-system", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;;
+    color: #171717;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.contactUs p{
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+
+/* details and map*/
+
+.content{
+    margin-top: 150px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.details{
+    flex: 1 0 auto;
+    font-size: 1.5em;
+    font-weight: 400;
+    position: relative;
+}
+
+.details h4{
+    font-size: .8em;
+    margin: 0.8em 0;
+    font-weight: 400;
+    line-height: 1.8em;
+}
+
+
+.details h4:nth-child(1)::before{
+    content: '';
+    background: url(../images/email.svg) no-repeat;
+    width: 33px;
+    height: 33px;
+    position: absolute;
+    left: -45px;
+    top: 7px;
+}
+
+
+.details h4:nth-child(2)::before{
+    content: '';
+    background: url(../images/phone.svg) no-repeat;
+    width: 33px;
+    height: 33px;
+    position: absolute;
+    left: -45px;
+    top: 80px;
+}
+
+
+.details h4:nth-child(3)::before{
+    content: '';
+    background: url(../images/address.svg) no-repeat;
+    width: 33px;
+    height: 33px;
+    position: absolute;
+    left: -45px;
+    top: 155px;
+}
+
+.details .buttonSocial{
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid #000;
+    color: #000;
+    background: transparent;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    transition: .5s;
+}
+
+.details .buttonSocial:hover{
+    color: #fff;
+    background-color: #000;
+}
+
+
+.map{
+    flex: 1 0 auto;
+}
+
+
+/* enquiry form*/
+.enquiry{
+    width: 100%;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+
+.enquiry .border{
+    border: 1px solid #171717;
+}
+
+.enquiry h3{
+    text-align: center;
+    font-size: 2em;
+    font-weight: 700;
+    font-family: "Spartan", BlinkMacSystemFont, "-apple-system", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;;
+    color: #171717;
+    width: 100%;
+    margin: 50px 0;
+}
