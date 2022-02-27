@@ -67,6 +67,10 @@
     margin-bottom: 100px;
 }
 
+.sideContent p{
+    margin-bottom: 50px;
+}
+
 .sideContent li{
     float: left;
     width: 32%;
@@ -81,6 +85,11 @@
     font-weight: 700;
     font-family: "Spartan", BlinkMacSystemFont, "-apple-system", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;;
     color: #171717;
+    transition: .5s;
+}
+
+.sideContent li a:hover{
+    opacity: .4;
 }
 
 .sideContent li a .image{
