@@ -1,0 +1,47 @@
+.siteContent{
+    width: 100%;
+    padding-top: 200px;
+    padding-bottom: 150px;
+}
+
+
+.siteContent h1{
+    text-align: center;
+    font-size: 3em;
+    font-weight: 700;
+    font-family: "Spartan", BlinkMacSystemFont, "-apple-system", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;;
+    color: #171717;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+
+.siteContent table{
+    width: 100%;
+    
+}
+
+.siteContent table tr{
+    width: 100%;
+    vertical-align: top;
+}
+
+
+.siteContent table tr td:first-child{
+    width: 50%;
+    padding-right: 40px;
+    padding-bottom: 50px;
+}
+
+.siteContent table tr td:first-child img{
+    width: 100%;
+}
+
+
+.siteContent table tr td h4{
+    font-size: 1.5em;
+    font-weight: 500;
+    font-family: "Spartan", BlinkMacSystemFont, "-apple-system", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;;
+    color: #171717;
+    margin-bottom: 20px;
+}
