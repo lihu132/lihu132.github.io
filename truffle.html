@@ -66,7 +66,18 @@
                 <div class="productImages">
                     <div class="productLargeImage" style="background-image: url(images/thumbnailslarge/ACO5.jpg);">
                     </div>
-                    <div class="productImageThumbs"></div>
+                    <div class="productLargeImage" style="background-image: url(images/thumbnailslarge/ACO5-1.jpg);">
+                    </div>
+                    <div class="productLargeImage" style="background-image: url(images/thumbnailslarge/ACO5-2.jpg);">
+                    </div>
+                    <div class="productLargeImage" style="background-image: url(images/thumbnailslarge/ACO5-3.jpg);">
+                    </div>
+                </div>
+                <div class="productImageThumbs">
+                    <img src="images/thumbnailsmall/ACO5.jpg" alt="" class="item current">
+                    <img src="images/thumbnailsmall/ACO5-1.jpg" alt="" class="item">
+                    <img src="images/thumbnailsmall/ACO5-2.jpg" alt="" class="item">
+                    <img src="images/thumbnailsmall/ACO5-3.jpg" alt="" class="item">
                 </div>
             </div>
             <div class="productRight">
@@ -132,7 +143,23 @@
         </div>
     </div>
 
+    <script>
+        var lis = document.querySelector('.productImageThumbs').querySelectorAll('.item')
+        var images = document.querySelector('.productImages').querySelectorAll('.productLargeImage')
+        for (var i = 0; i < lis.length; i++) {
+            lis[i].setAttribute('index', i)
+            lis[i].onclick = function () {
+                for (var i = 0; i < lis.length; i++) {
+                    lis[i].className = 'item'
+                    images[i].style.display = 'none'
+                }
+                this.className = this.className + ' current'
+                images[this.getAttribute('index')].style.display = 'block'
+            }
+        }
 
+
+    </script>
 
     <footer>
         <div class="footerTop clearfix">

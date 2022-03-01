@@ -24,6 +24,45 @@
     background-size: cover;
 }
 
+.productImages .productLargeImage:nth-child(n+2){
+    display: none;
+}
+
+.productImageThumbs{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.productImageThumbs .item{
+    /* flex: 1 ;
+    min-width: 0; */
+    flex: 1 1 auto;
+    overflow: auto;
+    margin-right: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border: 1px solid #fff;
+}
+
+.productImageThumbs .item:hover{
+    opacity: .5;
+}
+
+.productImageThumbs .item:last-child{
+    margin-right: 0;
+}
+
+.productImageThumbs .current{
+    border: 1px solid #171717;
+
+}
+
+
+
+
+
+
 
 .product .productRight{
     float: right;
