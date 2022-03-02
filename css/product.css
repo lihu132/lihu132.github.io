@@ -117,3 +117,19 @@
     color: #fff;
     background-color: #000;
 }
+
+
+@media only screen and (max-width:600px){
+    .product .productLeft{
+       width: 100%;
+    }
+
+    .product .productRight{
+        width: 100%;
+    }
+
+    .productRight h1{
+        margin-top: 20px;
+    }
+
+}

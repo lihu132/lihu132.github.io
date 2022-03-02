@@ -415,4 +415,9 @@ footer .button::before{
     .active{
         width: 100%;
     }
+
+    .container{
+        width: 95%;
+    }
+
   }
