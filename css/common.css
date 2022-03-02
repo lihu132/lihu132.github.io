@@ -378,6 +378,9 @@ footer .button::before{
         width: 100%;
         height: auto;
     }
+    .footerTop .right ul{
+        width: 100% !important;
+    }
 
     .footerTop .right .col1{
         float: left;
@@ -408,5 +411,8 @@ footer .button::before{
         width: 100%;
         text-align: center;
         margin-top: 20px;
+    }
+    .active{
+        width: 100%;
     }
   }
