@@ -10,9 +10,11 @@
     font-display: block;
   }
 
+
+
 /* center of page*/
 .w {
-    width: 1200px;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -49,6 +51,7 @@
     text-indent: -9999px;
     overflow: hidden;
 }
+
 
 /* top navigator*/
 .topNav{
@@ -343,3 +346,57 @@ footer .button::before{
     font-size: 20px;
     line-height: 40px;
 }
+
+
+
+@media only screen and (max-width:600px){
+    .topBanner .logo a{
+        width: 100px;
+        height: 72px;
+    }
+    
+
+    .footerTop .left{
+        float: left;
+        width: 100%;
+        height: 220px;
+        margin: 0;
+        text-align: center;
+    }
+
+    .footerTop .middle{
+        float: left;
+        width: 100%;
+        height: 220px;
+        /* background-color: pink; */
+        margin: 0;
+        margin-top: 20px;
+    }
+
+    .footerTop .right{
+        float: right;
+        width: 100%;
+        height: auto;
+    }
+
+    .footerTop .right .col1{
+        float: left;
+        width: 100%;
+        height: 176px;
+    }
+    
+    
+    .footerTop .right .col2{
+        float: left;
+        width: 100%;
+        height: 176px;
+    }
+
+    .footerTop .rightTop{
+        width: 100%;
+        height: 20%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+  }
