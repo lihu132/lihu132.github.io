@@ -399,4 +399,14 @@ footer .button::before{
         margin-top: 20px;
     }
 
+    .footerBottom .bottomNav li{
+        width: 100%;
+        text-align: center;
+    }
+
+    .footerBottom .copyRight{
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
   }
