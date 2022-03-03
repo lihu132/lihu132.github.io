@@ -16,7 +16,56 @@
 }
 
 
-.siteContent table{
+.siteContent .box{
+    display: grid;
+    width: 100%;
+    grid-template: auto auto auto auto/1fr 1fr;
+    grid-template-areas: "r1c1 r1c2""r2c1 r2c2""r3c1 r3c2""r4c1 r4c2";
+    grid-gap: 50px;
+    column-gap: 50px;
+}
+
+.box img{
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+}
+
+.box h4{
+    font-size: 1.5em;
+    font-weight: 500;
+    font-family: "Spartan", BlinkMacSystemFont, "-apple-system", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;;
+    color: #171717;
+    margin-bottom: 20px;
+} */
+
+
+.r1-c1{
+    grid-area: r1c1;
+}
+.r1-c2{
+    grid-area: r1c2;
+}
+.r2-c1{
+    grid-area: r2c1;
+}
+.r2-c2{
+    grid-area: r2c2;
+}
+.r3-c1{
+    grid-area: r3c1;
+}
+.r3-c2{
+    grid-area: r3c2;
+}
+.r4-c1{
+    grid-area: r4c1;
+}
+.r4-c2{
+    grid-area: r4c2;
+}
+
+/* .siteContent table{
     width: 100%;
     
 }
@@ -44,4 +93,16 @@
     font-family: "Spartan", BlinkMacSystemFont, "-apple-system", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;;
     color: #171717;
     margin-bottom: 20px;
+} */
+
+
+@media only screen and (max-width:600px){
+    .siteContent h1{
+        line-height: 1em;
+    }
+
+    .siteContent .box{
+        grid-template: auto auto auto auto auto auto auto auto/1fr;
+        grid-template-areas: "r1c1""r1c2""r2c1""r2c2""r3c1""r3c2""r4c1""r4c2";
+    }
 }
