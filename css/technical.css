@@ -30,22 +30,30 @@
     margin-bottom: 100px;
 }
 
-.technical .siteContent table{
+.technical .siteContent .technicalBox{
     width: 100%;
-    border-collapse: separate !important;
-    border-spacing: 15px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
 }
 
-.technical .siteContent table img{
+.technical .siteContent .technicalBox .item{
+    flex: 1 1 auto;
+    padding: 0 5px;
+}
+
+
+.technical .siteContent .technicalBox img{
+    object-fit: cover;
     width: 100%;
     height: auto !important;
 }
 
-.technical .siteContent table>tbody>tr>td{
-    vertical-align: top;
+.technical .siteContent .technical{
+    align-items: flex-start;
 }
 
-.technical .siteContent table h5{
+.technical .siteContent .technicalBox h5{
     font-size: 1.5em;
     font-weight: 650;
     font-family: "Spartan", BlinkMacSystemFont, "-apple-system", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;;
@@ -54,17 +62,17 @@
 
 }
 
-.technical .siteContent table p{
+.technical .siteContent .technical p{
     margin: 10px 0;
 }
 
-.technical .siteContent table a{
+.technical .siteContent .technicalBox a{
     text-decoration: underline;
     color: #171717;
     transition: 0.3s;
 }
 
-.technical .siteContent table a:hover{
+.technical .siteContent .technicalBox a:hover{
     color: #bebebe;
 }
 
@@ -90,22 +98,34 @@
 }
 
 
-.care table{
-    border-collapse: collapse;
-    border-spacing: 0;
+.care .careBoxContainer{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
 }
 
-.care table>tbody>tr>td {
-    width: 50%;
-    vertical-align: top;
-    height: auto !important;
+.care .careBox {
+    flex-basis: 48%;
+    display: flex;
+    flex-flow: column wrap;
 }
 
-.care table>tbody>tr>td:first-child{
-    padding-right: 3%;
+.care .careBox .article{
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #171717;
+    padding-bottom: 20px;
 }
 
-.care table h5{
+.care .careBox .article:last-child{
+    border: none;
+}
+
+
+
+
+.care .article h5{
     font-size: 1.5em;
     font-weight: 650;
     font-family: "Spartan", BlinkMacSystemFont, "-apple-system", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;;
@@ -113,25 +133,22 @@
     line-height: 3em;
 }
 
-.care table p{
+.care .article p{
     margin: 1em 0;
 }
 
-.care table hr{
-    width: 100%;
-    margin: 2em auto;
-}
 
-.care table ul{
+.care .article ul{
     padding-left:  1.1em;
 }
 
-.care table ul li{
+.care .article ul li{
     margin-bottom: 0.5em;
     position: relative;
+    list-style: disc;
 }
 
-.care table h6{
+.care .article h6{
     font-weight: 400;
     font-size: 1em;
     margin: 3em 0;
@@ -139,14 +156,35 @@
 }
 
 
-.care table h6 a{
+.care .article h6 a{
     display: inline-block;
     padding: 0.8em 1.6em;
     border: 1px solid #171717;
     transition: .5s;
 }
 
-.care table h6 a:hover{
+.care .article h6 a:hover{
     color: #fff;
     background-color: #000;
+}
+
+
+@media only screen and (max-width:600px){
+    .technical .sidebar{
+        display: none;
+    }
+
+    .technical .siteContent{width: 100%;}
+
+    .technical .siteContent .technicalBox{
+        flex-flow: column nowrap;
+    }
+
+    .care .careBoxContainer{
+        flex-flow: column nowrap;
+    }
+
+    .care .careBoxContainer .careBox{
+        flex-basis: 100%;
+    }
 }
