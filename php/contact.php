@@ -1,12 +1,13 @@
 <?php
     $name = $_POST['name'];
     $email = $_POST['email'];
+    $tel = $_POST['tel']
     $message = $_POST['message'];
     $from = 'From: TangledDemo'; 
     $to = 'demo@tangledindesign.com'; 
     $subject = 'Hello';
 
-    $body = "From: $name\n E-Mail: $email\n Message:\n $message \r\n";
+    $body = "From: $name\n E-Mail: $email\n Tel: $tel\n Message:\n $message \r\n";
 ?>
 
 <?php
