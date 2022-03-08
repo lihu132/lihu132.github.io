@@ -4,6 +4,11 @@
     width: 100%;
 }
 
+.siteTop img{
+    width: 100%;
+    height: auto;
+}
+
 /* .siteTop video{
     z-index: -1;
     position: fixed;
