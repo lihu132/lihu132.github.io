@@ -20,10 +20,3 @@ if ($_POST['submit']) {
 }
 ?>
 
-
-<?php
-header("Content-type: text/html; charset=utf-8");
-$file  = 'log.txt';
-$f = file_put_contents($file, $body,FILE_APPEND)
-
-?>
