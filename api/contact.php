@@ -13,7 +13,7 @@
 <?php
 if ($_POST['submit']) {
     if (mail ($to, $subject, $body, $headers)) { 
-        print "<script>document.location.href='https://www.engraintimber.com.au';</script>";
+        print "<p>success!</p>";
     } else { 
         echo '<p>Something went wrong, go back and try again!</p>'; 
     }
